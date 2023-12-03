@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.0.4" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.0.4" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="SVRGN.Libs.Contracts.Service.Persistance" Version="1.0.0-alpha17" />
+    <PackageReference Include="SVRGN.Libs.Implementations.DependencyInjection" Version="1.0.0-alpha02" />
+    <PackageReference Include="SVRGN.Libs.Implementations.Service.ConsoleLogger" Version="1.0.0-alpha09" />
+    <PackageReference Include="SVRGN.Libs.Implementations.Service.Object" Version="1.0.0-alpha01" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SVRGN.Libs.Implementations.Service.Persistance.FileIOWin\SVRGN.Libs.Implementations.Service.Persistance.FileIOWin.csproj" />
+    <ProjectReference Include="..\SVRGN.Libs.Implementations.Service.Persistance.Windows\SVRGN.Libs.Implementations.Service.Persistance.Windows.csproj" />
+    <ProjectReference Include="..\SVRGN.Libs.Implementations.Service.Persistance\SVRGN.Libs.Implementations.Service.Persistance.csproj" />
+  </ItemGroup>
+
+</Project>
