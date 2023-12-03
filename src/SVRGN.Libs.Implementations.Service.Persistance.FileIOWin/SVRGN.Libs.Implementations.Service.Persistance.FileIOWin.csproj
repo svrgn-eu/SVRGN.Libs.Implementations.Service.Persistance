@@ -4,7 +4,7 @@
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.0.0-alpha01</Version>
+		<Version>1.0.0-alpha02</Version>
 		<Authors>SVRGN.eu</Authors>
 		<Description>Specific Windows Platform implementations</Description>
 		<PackageReleaseNotes>changed strategy pattern interface</PackageReleaseNotes>
@@ -13,11 +13,11 @@
 
   <ItemGroup>
     <PackageReference Include="SVRGN.Libs.Contracts.Service.Persistance" Version="1.0.0-alpha17" />
-    <PackageReference Include="System.Management" Version="6.0.0" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
   </ItemGroup>
 		
   <ItemGroup>
-    <PackageReference Include="SVRGN.Libs.Contracts.Service.Logging" Version="1.0.0-alpha16" />
+    <PackageReference Include="SVRGN.Libs.Contracts.Service.Logging" Version="1.0.0-alpha17" />
   </ItemGroup>
 
 </Project>
