@@ -19,7 +19,7 @@ jobs:
 
     env:
       BUILD_CONFIG: 'Release'
-      SOLUTION: "src/SVRGN.Libs.Implementations.Service.Persistance.sln"
+      SOLUTION: 'src/SVRGN.Libs.Implementations.Service.Persistance.sln'
 
     runs-on: windows-latest
 
@@ -35,14 +35,16 @@ jobs:
         dotnet-version: "8.0.x"
 
     - name: Restore dependencies
-      run: dotnet restore $SOLUTION
+      run: dotnet restore ${{env.SOLUTION}}
       #working-directory: src
 
     - name: Build
-      run: dotnet build $SOLUTION --configuration $BUILD_CONFIG --no-restore
+      run: dotnet build ${{env.SOLUTION}} --configuration ${{env.BUILD_CONFIG}} --no-restore
+      #working-directory: src
 
     - name: Run tests
-      run: dotnet test $SOLUTION /p:Configuration=$BUILD_CONFIG --no-restore --no-build --verbosity normal
+      run: dotnet test ${{env.SOLUTION}} /p:Configuration=${{env.BUILD_CONFIG}} --no-restore --no-build --verbosity normal
+      #working-directory: src
 
     - name: Publish
       if: startsWith(github.ref, 'refs/tags/v')
