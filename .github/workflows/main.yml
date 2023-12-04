@@ -37,7 +37,7 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore $SOLUTION
-      working-directory: $SOLUTION_DIR
+      working-directory: src
 
     - name: Build
       run: dotnet build $SOLUTION --configuration $BUILD_CONFIG --no-restore
