@@ -18,7 +18,7 @@ jobs:
   build:
 
     env:
-      BUILD_CONFIG: 'Release'
+      BUILD_CONFIG: 'Release' 
       SOLUTION: 'src/SVRGN.Libs.Implementations.Service.Persistance.sln'
 
     runs-on: ubuntu-latest
