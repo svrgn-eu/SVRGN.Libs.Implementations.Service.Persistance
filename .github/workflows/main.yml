@@ -19,7 +19,8 @@ jobs:
 
     env:
       BUILD_CONFIG: 'Release'
-      SOLUTION: '/src/SVRGN.Libs.Implementations.Service.Persistance.sln'
+      SOLUTION: 'src/SVRGN.Libs.Implementations.Service.Persistance.sln'
+      SOLUTION_DIR: 'src'
 
     runs-on: windows-latest
 
@@ -36,6 +37,7 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore $SOLUTION
+      working-directory: $SOLUTION_DIR
 
     - name: Build
       run: dotnet build $SOLUTION --configuration $BUILD_CONFIG --no-restore
