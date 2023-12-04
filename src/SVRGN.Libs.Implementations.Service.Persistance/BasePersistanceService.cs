@@ -8,6 +8,9 @@ using System.Text;
 
 namespace SVRGN.Libs.Implementations.Service.Persistance
 {
+    /// <summary>
+    /// base persistance service for all others to inherit.
+    /// </summary>
     public abstract class BasePersistanceService : IPersistanceService
     {
         #region Properties
