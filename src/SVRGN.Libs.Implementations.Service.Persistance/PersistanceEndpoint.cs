@@ -30,7 +30,7 @@ namespace SVRGN.Libs.Implementations.Service.Persistance
 
             this.Paths = new List<IPersistancePath>();
         }
-        #endregion Construction
+        #endregion Construction 
 
         #region Methods
 
