@@ -19,7 +19,7 @@ jobs:
 
     env:
       BUILD_CONFIG: 'Release'
-      SOLUTION: './src/SVRGN.Libs.Implementations.Service.Persistance.sln'
+      SOLUTION: '/src/SVRGN.Libs.Implementations.Service.Persistance.sln'
 
     runs-on: windows-latest
 
