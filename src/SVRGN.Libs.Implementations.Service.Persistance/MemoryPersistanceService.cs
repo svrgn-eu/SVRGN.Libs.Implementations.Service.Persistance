@@ -8,6 +8,9 @@ using System.Text;
 
 namespace SVRGN.Libs.Implementations.Service.Persistance
 {
+    /// <summary>
+    /// a memory/RAM based implementation of the IPersistanceService
+    /// </summary>
     public class MemoryPersistanceService : BasePersistanceService
     {
         #region Properties
