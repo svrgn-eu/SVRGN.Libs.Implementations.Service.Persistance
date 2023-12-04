@@ -7,6 +7,9 @@ using System.Text;
 
 namespace SVRGN.Libs.Implementations.Service.Persistance.FileIOWin
 {
+    /// <summary>
+    /// Windows implementation of the File IO Strategy pattern
+    /// </summary>
     public class FileIOWrapper : IFileIOWrapper
     {
         #region Properties
