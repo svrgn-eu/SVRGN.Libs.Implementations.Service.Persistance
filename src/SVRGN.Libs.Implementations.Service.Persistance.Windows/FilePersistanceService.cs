@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace SVRGN.Libs.Implementations.Service.Persistance.Windows
 {
+    /// <summary>
+    /// Windows implementation of a file based persistance service
+    /// </summary>
     public class FilePersistanceService : BasePersistanceService
     {
         #region Properties
