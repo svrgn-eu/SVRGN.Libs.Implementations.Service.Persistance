@@ -7,7 +7,7 @@ using System.Text;
 namespace SVRGN.Libs.Implementations.Service.Persistance
 {
     /// <summary>
-    /// Implementation of the persistance endpoint interface
+    /// Implementation of the persistance endpoint interface.
     /// </summary>
     public class PersistanceEndpoint : IPersistanceEndpoint
     {
