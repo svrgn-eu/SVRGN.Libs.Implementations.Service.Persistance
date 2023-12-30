@@ -6,10 +6,20 @@
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <Version>1.0.0-alpha04</Version>
 	  <Authors>SVRGN.eu</Authors>
+	  <Copyright>2023 SVRGN.eu</Copyright>
 	  <Description>Specific Windows Platform implementations</Description>
 	  <PackageReleaseNotes>intial import</PackageReleaseNotes>
 	  <PackageTags>Services;Implementations;Windows</PackageTags>
+	  <PackageProjectUrl>https://SVRGN.eu</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SVRGN.Libs.Contracts.Service.Base" Version="1.0.0-alpha18" />
